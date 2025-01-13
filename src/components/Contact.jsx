@@ -1,6 +1,6 @@
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+
+import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { useState } from "react";
 
 const Contact = () => {
@@ -36,6 +36,7 @@ const Contact = () => {
       } else {
         setSuccess(false);
       }
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       setSuccess(false);
     } finally {
@@ -53,39 +54,27 @@ const Contact = () => {
         </div>
         <div className="flex flex-col items-center md:flex-row gap-[150px] justify-center">
           <div className="flex flex-col space-y-5 text-lg md:text-xl font-semibold">
-            <div className="flex items-center gap-3">
-              <FaLocationDot className="text-[#fe5617]" size={20} />
-              <span>Pondicherry</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-[#fe5617]" size={20} />
-              <span>9092595881</span>
-            </div>
+            
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-[#fe5617]" size={20} />
-              <span>immucoder@gmail.com</span>
+              <span>bsgowtham03@gmail.com</span>
             </div>
             <div className="flex flex-col items-center gap-3">
               <h2 className="text-xl font-bold">Follow on</h2>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/AMOHAMMEDIMRAN"
+                  href="https://github.com/bsgowtham03"
                   className="hover:text-[#fe5617]"
                 >
                   <FaGithub size={29} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/mohammedimrana/"
+                  href="https://www.linkedin.com/in/gowthamb14/"
                   className="hover:text-[#fe5617]"
                 >
                   <FaLinkedin size={29} />
                 </a>
-                <a
-                  href="https://www.instagram.com/immucoder/?__pwa=1"
-                  className="hover:text-[#fe5617]"
-                >
-                  <FaInstagram size={29} />
-                </a>
+                
               </div>
             </div>
           </div>
